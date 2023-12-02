@@ -174,9 +174,9 @@ const toggleArchiveView = () => {
 
 
 
-  const QUERY = '(prefers-reduced-motion: no-preference)';
-  const mediaQueryList = window.matchMedia(QUERY);
-  const prefersReducedMotion = !mediaQueryList.matches;
+  // const QUERY = '(prefers-reduced-motion: no-preference)';
+  // const mediaQueryList = window.matchMedia(QUERY);
+  // const prefersReducedMotion = !mediaQueryList.matches;
 
   
 
@@ -275,38 +275,27 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 
 
-<div id="gobacker" style={{position:'fixed', top:'60px', right:'3vw', zIndex:'5'}}><GoBack /></div>
+
 
 
 
 {showNav ? (
 
-<header>
 
+<header>
+<div id="gobacker" style={{position:'fixed', top:'60px', right:'3vw', zIndex:'5'}}><GoBack /></div>
+<div id="gobacker" style={{position:'fixed', top:'60px', right:'3vw', zIndex:'5'}}><GoBack /></div>
 <div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 3%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222',}}>
 
-{/* {loggedIn ? (
-<div style={{position:'absolute', left:'10px', top:'22px', cursor:'pointer'}}><BlueCheck /></div>
-) : (
-  ""
-  )} */}
 
 
 
-{prefersReducedMotion ? (
-    <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
-            <button className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', borderBottom:'0px solid transparent'}} aria-label="Return to Home">
-            {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="111" height="60" />
-                ) : (
-                  <div style={{fontWeight:'bold',}}>{companyname}</div>
-                )}
-            </button>
-            </Link>
-          ) : (
+
+
           
-                        <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'flex', alignItems:'center', justifyContent:'center', maxWidth:'', height:'60px', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
-            {iconimage ? (
+<Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'flex', alignItems:'center', justifyContent:'center', maxWidth:'', height:'60px', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
+  
+{iconimage ? (
 <>
 {loggedIn ? (
   <SiteLogo className="cornerlogo" style={{position:'relative', top:'', left:'30px', border:'0px solid white', padding:'0', maxHeight:'60px'}} alt={companyname} width="111" height="60" />
@@ -315,15 +304,20 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
               
 )}
 </>    
-                ) : (
-                  <div style={{fontWeight:'bold', display:'grid', justifyContent:'center', alignItems:'center', height:'60px', fontSize:'150%' }}>{companyname}</div>
-                )}
-            </Link>
+) : (
+  <div style={{fontWeight:'bold', display:'grid', justifyContent:'center', alignItems:'center', height:'60px', fontSize:'150%' }}>{companyname}1</div>
+)}
+</Link>
                         
-          )}
+
 
 <div id="bluecheck" style={{position:'absolute', left:'1%', top:'22px', cursor:'pointer'}}><BlueCheck /></div>
-          
+
+{/* {loggedIn ? (
+  <div id="bluecheck" style={{position:'absolute', left:'1%', top:'22px', cursor:'pointer'}}><BlueCheck /></div>
+) : (
+  ""
+  )} */}
 
 
 
@@ -401,7 +395,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 <div id="missioncontrol" className="missioncontrol sitecontrols" style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'3vw', textAlign:'center', maxHeight:'', alignItems:'center', paddingTop:'5px'}}>
 
-{/* {showSearch ? (
+{showSearch ? (
 <div className="searchIcon">
    <Link to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
     <SearchIcon style={{height:'30px'}} />
@@ -410,7 +404,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
         </div>
       ) : (
         ""
-      )} */}
+      )}
 
 
   <div>
