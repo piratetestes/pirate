@@ -15,7 +15,7 @@ const BlueCheck = () => {
     }
   `);
 
-  const hasNetlifyApp = data.site.siteMetadata.siteUrl.includes("netlify.app");
+  const hasNetlifyApp = useSiteMetadata().siteUrl.includes("netlify.app");
 
   return (
     <span title="This site is verified">
