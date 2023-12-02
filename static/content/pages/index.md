@@ -64,7 +64,7 @@ secondaryImage: /assets/default-user.webp
 title: Social media by the people for the people
 sharethis: false
 liarliar: false
-bumpertext: "Ha ha"
+bumpertext: "x"
 marate: x
 viewerwarning: x
 marating1: x
@@ -85,7 +85,7 @@ coverletter:
 scrollable: false
 contentinvideo: false
 nftdrop: x
-postLimit: "4"
+postLimit: "9"
 pagePW: ""
 ---
 

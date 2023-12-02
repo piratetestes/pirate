@@ -396,7 +396,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 <Menu />
 
 
-<li><Link className="navbar-item" to="/pirate" style={{paddingRight:'',}}>View Demo</Link></li>
+
 
 </ul>
 
@@ -548,7 +548,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
     ) : (
        <Menu />          
 )}
-<li><Link className="navbar-item" to="/#skills" style={{paddingRight:'',}}>View Demo</Link></li>
+
 
 <li>
 <ul className="missioncontrol sitecontrols" style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'', textAlign:'center', maxHeight:'', alignItems:'center', paddingTop:'5px'}}>

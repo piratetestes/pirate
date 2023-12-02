@@ -7,10 +7,6 @@
     {
       "menutitle": "Create",
       "url": "/pirate"
-    },
-    {
-      "menutitle": "End Demo?",
-      "url": "/"
     }
   ]
 }
