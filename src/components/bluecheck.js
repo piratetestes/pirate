@@ -1,12 +1,27 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import { BsFillPatchCheckFill } from "react-icons/bs";
-import { window } from "browser-monads"
+import useSiteMetadata from '../hooks/SiteMetadata';
+
 const BlueCheck = () => {
-  const hasCustomDomain = !window.location.hostname.includes("netlify.app");
+  const { siteUrl } = useSiteMetadata();
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          siteUrl
+        }
+      }
+    }
+  `);
+
+  const hasNetlifyApp = data.site.siteMetadata.siteUrl.includes("netlify.app");
 
   return (
     <span title="This site is verified">
-      {hasCustomDomain && <BsFillPatchCheckFill style={{ color: "#1D9BF0" }} />}
+      {!hasNetlifyApp ? (
+        <BsFillPatchCheckFill style={{ color: "#1D9BF0" }} />
+      ) : null}
     </span>
   );
 };
