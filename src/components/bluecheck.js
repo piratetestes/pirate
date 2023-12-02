@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillPatchCheckFill } from "react-icons/bs";
-
+import { window } from "browser-monads"
 const BlueCheck = () => {
   const hasCustomDomain = !window.location.hostname.includes("netlify.app");
 
