@@ -5,21 +5,13 @@ import useSiteMetadata from '../hooks/SiteMetadata';
 
 const BlueCheck = () => {
   const { siteUrl } = useSiteMetadata();
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          siteUrl
-        }
-      }
-    }
-  `);
 
-  const hasNetlifyApp = useSiteMetadata().siteUrl.includes("netlify.app");
+  // Check if the siteUrl contains "netlify.app"
+  const hasCustomDomain = !siteUrl.includes("netlify.app");
 
   return (
     <span title="This site is verified">
-      {!hasNetlifyApp ? (
+      {hasCustomDomain ? (
         <BsFillPatchCheckFill style={{ color: "#1D9BF0" }} />
       ) : null}
     </span>
