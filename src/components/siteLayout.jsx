@@ -174,9 +174,9 @@ const toggleArchiveView = () => {
 
 
 
-  const QUERY = '(prefers-reduced-motion: no-preference)';
-  const mediaQueryList = window.matchMedia(QUERY);
-  const prefersReducedMotion = !mediaQueryList.matches;
+  // const QUERY = '(prefers-reduced-motion: no-preference)';
+  // const mediaQueryList = window.matchMedia(QUERY);
+  // const prefersReducedMotion = !mediaQueryList.matches;
 
   
 
@@ -290,17 +290,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 
 
-{prefersReducedMotion ? (
-    <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
-            <button className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', borderBottom:'0px solid transparent'}} aria-label="Return to Home">
-            {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="111" height="60" />
-                ) : (
-                  <div style={{fontWeight:'bold',}}>{companyname}</div>
-                )}
-            </button>
-            </Link>
-          ) : (
+
           
                         <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'flex', alignItems:'center', justifyContent:'center', maxWidth:'', height:'60px', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
@@ -317,7 +307,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
                 )}
             </Link>
                         
-          )}
+
 
 <div id="bluecheck" style={{position:'absolute', left:'1%', top:'22px', cursor:'pointer'}}><BlueCheck /></div>
 

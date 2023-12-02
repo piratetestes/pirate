@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import { BsFillPatchCheckFill } from "react-icons/bs";
-import useSiteMetadata from "../hooks/SiteMetadata";
 import { useLocation } from "@reach/router";
 
 const BlueCheck = () => {
-  const { siteUrl } = useSiteMetadata();
   const location = useLocation();
 
   // Check if the hostname includes "netlify.app"
