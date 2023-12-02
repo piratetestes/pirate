@@ -87,6 +87,7 @@ contentinvideo: false
 nftdrop: x
 postLimit: "9"
 pagePW: ""
+excludeFromRSS: true
 ---
 
 <div style="">
