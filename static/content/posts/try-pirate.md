@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Try PIRATE today!
-slug: /try-pirate
+slug: /
 date: 2023-10-01 09:00
 description: Experience the thrill of PIRATE
 youtube:
@@ -21,7 +21,7 @@ youtube:
 comments: false
 shareable: false
 underlayImage: /assets/transparent.png
-featuredImage: /assets/default-og-image.webp
+featuredImage: /assets/pirate-propaganda.webp
 svgImage: /assets/null.svg
 showZoom: false
 showPageNav: false
