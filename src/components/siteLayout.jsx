@@ -292,8 +292,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 
           
-                        <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'flex', alignItems:'center', justifyContent:'center', maxWidth:'', height:'60px', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
-            {iconimage ? (
+<Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'flex', alignItems:'center', justifyContent:'center', maxWidth:'', height:'60px', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
+  
+{iconimage ? (
 <>
 {loggedIn ? (
   <SiteLogo className="cornerlogo" style={{position:'relative', top:'', left:'30px', border:'0px solid white', padding:'0', maxHeight:'60px'}} alt={companyname} width="111" height="60" />
@@ -302,10 +303,10 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
               
 )}
 </>    
-                ) : (
-                  <div style={{fontWeight:'bold', display:'grid', justifyContent:'center', alignItems:'center', height:'60px', fontSize:'150%' }}>{companyname}</div>
-                )}
-            </Link>
+) : (
+  <div style={{fontWeight:'bold', display:'grid', justifyContent:'center', alignItems:'center', height:'60px', fontSize:'150%' }}>{companyname}1</div>
+)}
+</Link>
                         
 
 
