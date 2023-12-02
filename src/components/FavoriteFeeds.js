@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
 import userRssData from "../../static/data/userRss.json";
 // import useNetlifyIdentity from '../components/useNetlifyIdentity';
-import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"
+
 
 const createExcerpt = (text, maxLength) => {
   if (!text) {
@@ -30,26 +30,26 @@ const FavoriteFeeds = () => {
   const [isMobile, setIsMobile] = useState(false);
   
 
-  const resizeMobile = () => {
-    setIsMenuOpen(false);
-    setIsMobile(true);
-    const elements = document.querySelectorAll(".menusnapp");
-    elements.forEach((el) => {
-      el.style.display = "none";
-      el.style.overflow = "hidden";
-      el.style.transition = "transform 1550ms ease-in-out";
-    });
-  };
+  // const resizeMobile = () => {
+  //   setIsMenuOpen(false);
+  //   setIsMobile(true);
+  //   const elements = document.querySelectorAll(".menusnapp");
+  //   elements.forEach((el) => {
+  //     el.style.display = "none";
+  //     el.style.overflow = "hidden";
+  //     el.style.transition = "transform 1550ms ease-in-out";
+  //   });
+  // };
 
-  const resizeDesk = () => {
-    setIsMenuOpen(true);
-    setIsMobile(false);
-    const elements = document.querySelectorAll(".menusnapp");
-    elements.forEach((el) => {
-      el.style.display = "flex";
-      el.style.transition = "transform 1550ms ease-in-out";
-    });
-  };
+  // const resizeDesk = () => {
+  //   setIsMenuOpen(true);
+  //   setIsMobile(false);
+  //   const elements = document.querySelectorAll(".menusnapp");
+  //   elements.forEach((el) => {
+  //     el.style.display = "flex";
+  //     el.style.transition = "transform 1550ms ease-in-out";
+  //   });
+  // };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -83,10 +83,10 @@ const FavoriteFeeds = () => {
   // const [loggedIn, setLoggedIn] = useState(false);
   // useNetlifyIdentity(setLoggedIn);
 
-  const combinedFeed = [
-    ...favorites,
-    ...feed.filter((item) => !favorites.some((fav) => fav.link === item.link)),
-  ];
+  // const combinedFeed = [
+  //   ...favorites,
+  //   ...feed.filter((item) => !favorites.some((fav) => fav.link === item.link)),
+  // ];
 
   useEffect(() => {
     const storedFavorites = localStorage.getItem("favorites");
