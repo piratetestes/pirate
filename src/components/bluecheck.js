@@ -17,7 +17,7 @@ const BlueCheck = () => {
 
   return (
     <span title="This site is verified">
-      {!hasNetlifyApp ? (
+      {hasNetlifyApp ? (
         <BsFillPatchCheckFill style={{ color: "#1D9BF0" }} />
       ) : null}
     </span>
