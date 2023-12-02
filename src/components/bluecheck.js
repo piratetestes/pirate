@@ -1,20 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BsFillPatchCheckFill } from "react-icons/bs";
-import { useLocation } from "@reach/router";
+import useSiteMetadata from "../hooks/SiteMetadata";
 
 const BlueCheck = () => {
-  const location = useLocation();
+  const { siteUrl } = useSiteMetadata();
 
-  // Check if location is defined and if its hostname includes "netlify.app"
-  const hasNetlifyApp = location && location.hostname && location.hostname.includes("netlify.app");
-
-  useEffect(() => {
-    // You can perform additional logic or side effects based on the location here
-    // This effect will run whenever the location changes
-    if (location) {
-      console.log("Current path:", location.pathname);
-    }
-  }, [location]);
+  // Check if the hostname includes "netlify.app"
+  const hasNetlifyApp = window.location.hostname.includes("netlify.app");
 
   return (
     <span title="This site is verified">
