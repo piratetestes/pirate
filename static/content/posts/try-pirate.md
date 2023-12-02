@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Try PIRATE today!
-slug: /
+slug: /elon
 date: 2023-10-01 09:00
 description: Experience the thrill of PIRATE
 youtube:

@@ -46,13 +46,13 @@ export const query = graphql`
 
 const HomePage = ({ data }) => {
   const { showNav } = useSiteMetadata();
-
+  const { siteUrl } = useSiteMetadata();
   return (
     <Layout>
       <Helmet>
         <body className="archivepage utilitypage" />
       </Helmet>
-
+      {siteUrl}
       {showNav ? (
         <div className='spacer' style={{ height: '70px', border: '0px solid yellow' }}></div>
       ) : (
