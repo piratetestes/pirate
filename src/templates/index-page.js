@@ -37,9 +37,6 @@ export const query = graphql`
           }
         }
       }
-      group(field: { frontmatter: { tags: SELECT } }) {
-        fieldValue
-      }
     }
   }
 `;
