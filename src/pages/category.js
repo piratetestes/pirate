@@ -76,7 +76,6 @@ const CategoryIndex = ({ data, pageContext }) => {
               className="post-card12 font"
               key={index}
               style={{
-                border: '0px solid red',
                 display: 'grid',
                 width: '100%',
                 maxWidth: '',

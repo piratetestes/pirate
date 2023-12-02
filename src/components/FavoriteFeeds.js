@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import useSiteMetadata from "../hooks/SiteMetadata";
-import Layout from "../components/siteLayout";
 import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
 import userRssData from "../../static/data/userRss.json";
-import Menu from "../components/menu"
 // import useNetlifyIdentity from '../components/useNetlifyIdentity';
 import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"
 
@@ -71,18 +69,18 @@ const FavoriteFeeds = () => {
   }, [isMenuOpen]);
   
 
-  const MenuIcon = isMenuOpen ? RiCloseCircleFill : RiMenuUnfoldFill;
+  // const MenuIcon = isMenuOpen ? RiCloseCircleFill : RiMenuUnfoldFill;
 
 
 
   const { showNav } = useSiteMetadata();
-  const { showDates } = useSiteMetadata();
+  // const { showDates } = useSiteMetadata();
   const { postcount } = useSiteMetadata();
   const [favorites, setFavorites] = useState([]);
   const [feed, setFeed] = useState([]);
   const [visibleItems, setVisibleItems] = useState(postcount || 10); // default value of 10
 
-  const [loggedIn, setLoggedIn] = useState(false);
+  // const [loggedIn, setLoggedIn] = useState(false);
   // useNetlifyIdentity(setLoggedIn);
 
   const combinedFeed = [

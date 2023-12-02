@@ -144,7 +144,7 @@ const TimeLine = () => {
     background: "rgba(0, 0, 0, .5)",
     color: "#999",
   }}
-  autoFocus={index === 0}
+  // autoFocus={index === 0}
   autoCapitalize="none"
 />
 

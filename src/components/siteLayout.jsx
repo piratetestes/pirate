@@ -36,7 +36,7 @@ import BlueCheck from './bluecheck';
 
 const Layout = ({ children }) => {
 
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn] = useState(false);
   // useNetlifyIdentity(setLoggedIn);
 
 

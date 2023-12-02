@@ -78,8 +78,8 @@ const AuthenticatedTimeline = () => {
     };
     
 
-  const [ setLoggedIn] = useState(false);
-  // useNetlifyIdentity(setLoggedIn);
+  // const [ setLoggedIn] = useState(false);
+  // // useNetlifyIdentity(setLoggedIn);
 
   const combinedFeed = [
     ...favorites,

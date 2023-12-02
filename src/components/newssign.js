@@ -63,10 +63,11 @@ const NewsletterPage = () => (
              
 
                <label style={{color:'#fff'}} htmlFor="email">
-                 <input type="email" id="email" required={true}
+                 <input name="email" type="email" id="email" required={true}
                       placeholder="your@email.com"
                       autocomplete="email"
-                      style={{}}/></label>
+                      style={{}}/>
+              </label>
                       
             
 

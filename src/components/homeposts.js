@@ -9,7 +9,6 @@ import { AiOutlinePicLeft } from "react-icons/ai"
 import TimeAgo from 'react-timeago'
 import useSiteMetadata from "../hooks/SiteMetadata"
 const HomePosts = ({ data }) => {
-  const { showNav } = useSiteMetadata();
   const { showDates } = useSiteMetadata()
   const { postcount } = useSiteMetadata()
 

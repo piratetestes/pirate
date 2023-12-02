@@ -163,7 +163,7 @@ const Post = ({ data, pageContext }) => {
 
   const MenuIcon = isMenuOpen ? RiCloseCircleFill : RiMenuUnfoldFill;
 
-  const { showModals } = useSiteMetadata()
+  // const { showModals } = useSiteMetadata()
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
