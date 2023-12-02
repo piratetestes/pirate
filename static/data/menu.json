@@ -1,0 +1,12 @@
+{
+  "menuItems": [
+    {
+      "menutitle": "What is PIRATE?",
+      "url": "/about"
+    },
+    {
+      "menutitle": "Learn More",
+      "url": "/category"
+    }
+  ]
+}
