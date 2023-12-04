@@ -283,7 +283,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 
 <header>
-<div id="gobacker" style={{position:'fixed', top:'60px', right:'3vw', zIndex:'5'}}><GoBack /></div>
+  
 <div id="gobacker" style={{position:'fixed', top:'60px', right:'3vw', zIndex:'5'}}><GoBack /></div>
 <div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 3%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222',}}>
 

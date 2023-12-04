@@ -317,7 +317,7 @@ return (
 <button className="button" onClick={addSubscription}>Add Subscription</button>
 </div>
 <div className="flexcheek" style={{ minWidth: '', maxHeight: '40vh', overflow: 'scroll', border:'1px solid #333', padding:'100px 3% 0 3%', borderRadius:'8px', textAlign:'center', position:'relative' }}>
-<h3>Latest Subscribed Feeds:</h3>
+<h3>Latest Feeds:</h3>
 
 <ul style={{display:'flex', flexDirection:'column'}}>
   {uniqueSubscriptions.map((subscription, index) => (
@@ -344,7 +344,7 @@ return (
         </div>
 
 
-
+      
 
 
 
