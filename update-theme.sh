@@ -16,6 +16,9 @@ git clone --branch $BRANCH_OR_TAG --depth 1 $THEME_REPO_URL tmp_theme
 rm -rf src
 mv tmp_theme/src .
 
+# Copy the package.json file
+cp tmp_theme/package.json .
+
 # Clean up
 rm -rf tmp_theme
 rm -rf user_src_backup
