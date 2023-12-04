@@ -12,6 +12,9 @@ mv src user_src_backup
 # Clone the central repository
 git clone --branch $BRANCH_OR_TAG --depth 1 $THEME_REPO_URL tmp_theme
 
+# Ensure the destination directories exist
+mkdir -p src public
+
 # Replace the src and public folders
 rm -rf src public
 mv tmp_theme/src .
