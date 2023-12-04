@@ -33,7 +33,7 @@ const HomePosts = ({ data }) => {
   return (
 
 <>
-        <div className="spacer2" style={{ height: "70px", border: "0px solid yellow" }}></div>
+        {/* <div className="spacer2" style={{ height: "70px", border: "0px solid yellow" }}></div> */}
     
 
 
