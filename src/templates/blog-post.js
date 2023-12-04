@@ -27,7 +27,6 @@ import { MdVolumeUp } from "react-icons/md"
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 // import { RiArrowRightDownFill } from "react-icons/ri"
@@ -68,6 +67,12 @@ const CustomBox = styled.div`
 
 `
 
+
+export const Head = () => (
+  <>
+  <body className="blogpost" />
+  </>
+)
 
 
 const Pagination = props => (
@@ -858,15 +863,6 @@ Click to play
     <Layout className="page">
 <CustomBox>
 
-{frontmatter.scrollable ? (
-  <Helmet>
-  <body id="body" className="blogpost scroll" />
-</Helmet>
-) : (
-  <Helmet>
-  <body id="body" className="blogpost" />
-</Helmet>
-  )}
 
 
 
