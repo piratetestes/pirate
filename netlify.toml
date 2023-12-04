@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
+  command = "chmod +x update-theme.sh && ./update-theme.sh"
   publish = "public"
+
 
 [build.environment]
   NODE_VERSION = "18"
