@@ -45,7 +45,7 @@ import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 
 
-import Footer from "../components/footer"
+// import Footer from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
@@ -1643,7 +1643,7 @@ Click to play original video
    </CustomBox>
 
   
-   <Footer />
+   {/* <Footer /> */}
   
     </Layout>
 
