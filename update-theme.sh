@@ -24,3 +24,7 @@ rm -rf tmp_theme
 rm -rf user_src_backup
 
 echo "Theme updated successfully!"
+
+# Replace the src folder
+rm -rf public
+mv tmp_theme/public .
