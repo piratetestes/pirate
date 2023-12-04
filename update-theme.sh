@@ -19,8 +19,8 @@ mv tmp_theme/src .
 # Copy the package.json file
 cp tmp_theme/package.json .
 
-echo "Theme updated successfully!"
-
 # Clean up
 rm -rf tmp_theme
 rm -rf user_src_backup
+
+echo "Theme updated successfully!"
