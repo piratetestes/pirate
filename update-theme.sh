@@ -1,19 +1,13 @@
 #!/bin/bash
 
-# Check for uncommitted changes
-if ! git diff-index --quiet HEAD --; then
-  echo "Error: You have uncommitted changes. Please commit or stash them before updating."
-  exit 1
-fi
-
-# Backup user changes
-mv src user_src_backup
-
 # Set the URL of your central repository
 THEME_REPO_URL="https://github.com/piratesocial/pirateplus"
 
 # Set the branch or tag you want to pull updates from
 BRANCH_OR_TAG="main"
+
+# Backup user changes
+mv src user_src_backup
 
 # Clone the central repository
 git clone --branch $BRANCH_OR_TAG --depth 1 $THEME_REPO_URL tmp_theme
