@@ -2,8 +2,8 @@
 slug: /
 tagline:  You're the Captain of your content!
 featuredImage: /assets/pirate-propaganda.webp
-youtube:
-  youtuber: 
+youtube: 
+  youtuber: ""
   youtuber2: ""
   youtubeautostart: false
   youtubemute: false
@@ -20,7 +20,7 @@ youtube:
 audiostart: "0"
 audioend: ""
 audiotitle: "Shoop"
-underlayImage: 
+underlayImage: ""
 profText:
  <p>PIRATE is a social network with NO central control or ownership. It's based on leading Open-Source platforms and runs on individually owned websites. </p>
 
@@ -39,27 +39,27 @@ skillsText:
   <dt>
   <h2>Overall Skills</h2><div>100%</div>
   </dt>
-  <dd class="percentage percentage-90"><span class="text">Organization</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Problem Solving</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">Outgoing</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Javascript</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
+  <dd className="percentage percentage-90"><span className="text">Organization</span> <span className="percent">90%</span></dd>
+  <dd className="percentage percentage-75"><span className="text">Problem Solving</span> <span className="percent">75%</span></dd>
+  <dd className="percentage percentage-85"><span className="text">Outgoing</span> <span className="percent">85%</span></dd>
+  <dd className="percentage percentage-75"><span className="text">Javascript</span> <span className="percent">75%</span></dd>
+  <dd className="percentage percentage-80"><span className="text">UI Design</span> <span className="percent">80%</span></dd>
+  <dd className="percentage percentage-85"><span className="text">UX Design</span> <span className="percent">85%</span></dd>
   </dl>
 
   <dl>
   <dt>
   <h2>Detailed Skills</h2><div>100%</div>
   </dt>
-  <dd class="percentage percentage-90"><span class="text">Word Perfect</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">MS Paint</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Photoshop</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-99"><span class="text">Hacking</span> <span class="percent">99%</span></dd>
+  <dd className="percentage percentage-90"><span className="text">Word Perfect</span> <span className="percent">90%</span></dd>
+  <dd className="percentage percentage-85"><span className="text">MS Paint</span> <span className="percent">85%</span></dd>
+  <dd className="percentage percentage-75"><span className="text">Photoshop</span> <span className="percent">75%</span></dd>
+  <dd className="percentage percentage-99"><span className="text">Hacking</span> <span className="percent">99%</span></dd>
   </dl>
 cta:
   ctaText: Reserve Your Galleon
   ctaLink: /contact
-svgImage: 
+svgImage: ""
 secondaryImage: /assets/default-user.webp
 title: Social media by the people for the people
 sharethis: false
