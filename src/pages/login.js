@@ -14,7 +14,7 @@ export const Head = () => (
   </>
 )
 
-function NotFound () {
+function LogIn () {
   const { showNav } = useSiteMetadata()
   return (
 
@@ -51,7 +51,7 @@ Boom
   );
       }
 
-export default NotFound
+export default LogIn
 
 
 
