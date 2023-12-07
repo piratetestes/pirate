@@ -22,6 +22,9 @@ cp tmp_theme/gatsby-config.js .
 # Replace the gatsby-node.js file
 cp tmp_theme/gatsby-node.js .
 
+# Replace the netlify.toml file
+cp tmp_theme/netlify.toml .
+
 # Update the admin/config.yml file
 cp tmp_theme/static/admin/config.yml static/admin/
 
